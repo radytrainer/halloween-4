@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+:root{
+    --orange:#ff7800;
+    --black:#130f40;
+    --light-color:#666;
+    --box-shadow:0 .5rem 1.5rem rgba(206, 95, 61, 0.787);
+}
+
+body{
+    background:#eee
+}
+
+*{
+    font-family: "Open Sans", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+html{
+    font-size: 1.2rem;
+}
+
+.btn{
+    color: var(--orange);
+}
+
+/* header style starts */
+
+.header{
+    position: fixed;
+    top: 0;left: 0; right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+    height: 1.5rem;
+}
+
+.header .logo{
+    width: 5rem;
+}
+
+.header .logo i{
+    color: var(--orange);
+    font-size: 2rem;
+}
+
+.header .icons div{
+    color: var(--black);
+    margin-right: 1.5rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+.header .icons div:hover{
+    color: var(--orange);
+}
+
+.header .navbar .text-color{
+    color: var(--orange);
+}
+
+/* header style ends */
+
+.navbar a{
+    color: var(--black);
+    margin: 1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.navbar a:hover{
+    color: var(--orange);
+}
+
+
+.home{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../photo/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 31rem;
+}
+
+.home .content{
+    text-align: center;
+    padding-top: 13rem;
+}
+
+.home .content h3{
+    color: #fff;
+    font-size: 1.7rem;
+}
+
+.home .content h3 span{
+    color:var(--orange);  
+}
+
+.home .content p{
+    color:#fff;
+    font-size: 1rem;
+}
+
+.home .content .btn{
+    border: 1px solid #fff;
+    border-radius: .5rem;
+    padding: .5rem 2rem;
+}
+
+.home .content .btn:hover{
+    color: #fff;
+    background: var(--orange);
+}
+
+.heading{
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+
+.features .heading{
+    font-family: 'Creepster', cursive;
+}
+
+.features .heading span{
+    font-family: 'Creepster', cursive;
+}
+
+.features .box-container{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(10rem, .5fr));
+    gap: 1.5rem;
+    margin: 2rem;
+}
+
+.features .box-container .box{
+    padding: 1rem 1rem;
+    text-align: center;
+    border: 1px solid var(--black);
+    background: #fff;
+}
+
+.features .box-container .box img{
+    margin: 1rem 0;
+    height: 5rem;
+}
+
+.features .box-container .box h3{
+    color: var(--black);
+}
+
+.features .box-container .box p{
+    line-height: 1.8;
+    color: var(--light-color);
+    padding: 1rem 0;
+}
+
+.features .box-container .box a{
+    border: 1px solid var(--black);
+    padding: .2rem .3rem;
+    border-radius: .5rem;
+}
+
+.features .box-container .box a:hover{
+    background: var(--orange);
+    color: #fff;
+}
+
+
+
+/* footer style ends */
+
+
+/* teams style starts */
+
+.features .heading-text{
+    font-family: 'Creepster', cursive;
+    padding-top: 10rem;
+    padding-bottom: 3rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.features .heading-text span{
+    font-family: 'Creepster', cursive;
+    font-size: 2rem;
+}
+
+/* teams style ends */
+
+/* challenges style starts */
+
+.challenges{
+    width: 80%;
+    padding-top: 10rem;
+    margin: auto;
+    margin-bottom: 100px;
+
+}
+
+.challenges .box{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid var(--black);
+    margin-top: 1rem;
+    padding: 1.5rem 9%;
+    background: #fff;
+    line-height: 1.8;
+}
+
+.challenges .box img{
+    width:5rem ;
+    height: 3rem;
+    padding-right: 1rem;
+}
+
+.challenges .box .text p{
+    color: var(--light-color);
+    margin-left: 5rem;
+}
+
+.challenges .box .text h3{
+    margin-left: 5rem;
+   
+}
+.challenges .box h2 {
+    text-transform: uppercase;
+}
+.challenges .box a{
+    
+    background: orange;
+    background:#000;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 15px;
+}
+
+.challenges .box .text .pic{
+    display: flex;
+}
+
+/* challenges style ends */
+
+.features .box-container .the-scores{
+    font-size: 2rem;
+    margin-top: 2rem;
+}
